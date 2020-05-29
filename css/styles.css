@@ -151,13 +151,15 @@ nav .enlace a {
 }
 
 .carta {
-    background-image: url(../img/carta.png);
-    background-size: cover;
-    height: 1615px;
+    width: 100%;
+    position: relative;
+}
+
+.carta img {
+    width: 100%;
     border-top: 5px solid white;
     border-bottom: 5px solid white;
     box-shadow: inset 0 0 15px black;
-    position: relative;
 }
 
 .carta a {
@@ -437,11 +439,17 @@ footer .texto {
 /* CARTA */
 
 .contenedor-carta {
+    width: 100%;
     margin: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 180px 0 0 0;
+}
+
+.contenedor-carta img {
+    width: 100%;
+    max-width: 612px;
 }
 
 .contenedor-carta a {
@@ -462,4 +470,67 @@ footer .texto {
 .contenedor-carta a:hover {
     background-color: rgba(255, 255, 255, 0.2);
     transform: scale(1.05);
+}
+
+@media screen and (max-width: 1250px) {
+    .carta a {
+        top: 650px;
+        left: 350px;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .carta a {
+        top: 550px;
+        left: 280px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .carta a {
+        top: 420px;
+        left: 230px;
+    }
+    .galeria picture {
+        width: 49%;
+    }
+    footer .contenedor {
+        width: 100%;
+    }
+
+    .cards-paellas {
+        flex-wrap: wrap;
+    }
+    .card-paella {
+        width: 45%;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    nav {
+        height: 150px;
+    }
+    .cont-paellas {
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+    .paella {
+        width: 100%;
+        margin-top: 30px;
+    }
+    .paella:nth-child(2) {
+        width: 100%;
+    }
+    .carta a {
+        top: 280px;
+        left: 180px;
+    }
+    .galeria picture {
+        width: 100%;
+    }
+    
+    .card-paella {
+        width: 250px;
+    }
 }
