@@ -254,10 +254,14 @@ nav .enlace a {
 }
 
 .eventos {
-    background-image: url(../img/salon.jpg);
+    /* background-image: url(../img/salon.jpg);
     background-size: cover;
-    height: 650px;
+    height: 650px; */
     position: relative;
+}
+
+.eventos img {
+    width: 100%;
 }
 
 .eventos p {
@@ -507,6 +511,9 @@ footer .texto {
     }
     .galeria picture {
         width: 49%;
+    }  
+    .eventos p {
+        top: 100px;
     }
     footer .contenedor {
         width: 100%;
@@ -552,6 +559,10 @@ footer .texto {
         transform: translateX(0%);
     }
 
+    .paellas > p {
+        font-size: 18px;
+        width: 90%;
+    }
     .cont-paellas {
         flex-wrap: nowrap;
         flex-direction: column;
@@ -569,6 +580,15 @@ footer .texto {
     }
     .galeria picture {
         width: 100%;
+    }
+    .eventos p {
+        top: 50px;
+        left: 20px;
+        width: 300px;
+        font-size: 22px;
+    }
+    footer .texto {
+        width: 300px;
     }
     
     .card-paella {
