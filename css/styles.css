@@ -82,14 +82,14 @@ nav .enlace a {
 .hamburguesa {
     height: 100%;
     width: 70px;
-    text-align: center;
+    text-align: right;
     color: white;
     display: none;
 }
 
 .hamburguesa i {
     vertical-align: top;
-    padding: 25px;
+    padding: 0 5px 25px 25px;
     font-size: 2em;
 }
 
